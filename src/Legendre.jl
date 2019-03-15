@@ -34,7 +34,7 @@ function leg2poly_coeff(p::AbstractArray{T, 1})::AbstractArray{T,1} where {T<:Ab
 end
 
 function leg2poly(p::AbstractArray{T, 1})::Polynomials.Poly{T} where {T<:AbstractFloat}
-    Polynomials.Poly(leg2poly(p))
+    Polynomials.Poly(leg2poly_coeff(p))
 end
 
 end # module
