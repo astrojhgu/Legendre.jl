@@ -1,5 +1,5 @@
 authors = ["Gu Junhua <jhgu@nao.cas.cn>"]
-name = "Legendre.jl"
+name = "Legendre"
 uuid = "2c2f3b02-46f9-11e9-0814-1fd420591fde"
 version = "0.1.0"
 
