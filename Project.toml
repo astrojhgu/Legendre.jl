@@ -1,0 +1,8 @@
+authors = ["Gu Junhua <jhgu@nao.cas.cn>"]
+name = "Legendre.jl"
+uuid = "2c2f3b02-46f9-11e9-0814-1fd420591fde"
+version = "0.1.0"
+
+[deps]
+SpecialFunctions = "276daf66-3868-5448-9aa4-cd146d93841b"
+Polynomials = "f27b6e38-b328-58d1-80ce-0feddd5e7a45"
