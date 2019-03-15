@@ -26,7 +26,6 @@ function leg2poly_coeff(p::AbstractArray{T, 1})::AbstractArray{T,1} where {T<:Ab
     result=zeros(T, n)
     for i in 1:n
         for j in 0:i-1
-            println(i," ",j)
             result[j+1]+=p[i]*coefficient(i-1, j, T)
         end
     end
