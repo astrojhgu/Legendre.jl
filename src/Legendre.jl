@@ -32,6 +32,16 @@ function leg2poly_coeff(p::AbstractArray{T, 1})::AbstractArray{T,1} where {T<:Ab
     result
 end
 
+function leg2poly_matrix(T, order::Int)::Array{T,2}
+    result=zeros(T, order+1, order+1)
+    for i in 1:order+1
+        for j in 0:order
+            result[i,j+1]=coefficient(i-1, j, T)
+        end
+    end
+    result
+end
+
 function leg2poly(p::AbstractArray{T, 1})::Polynomials.Poly{T} where {T<:AbstractFloat}
     Polynomials.Poly(leg2poly_coeff(p))
 end
